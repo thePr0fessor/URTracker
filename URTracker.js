@@ -38,8 +38,7 @@ function showmethemoney()
             $outputElemContainer = $('<div>', {style:'position:relative; border-radius:23px; text-color:#354148; height:24px; padding-top:1px; padding-left:10px; padding-right:100px; display:block; float:right; margin-top:11px; font-weight:bold; font-size:medium;'});  //margin:9px 5px 8px 5px;  display:inline;
             $outputElem = $('UR Tracker Header', {id: 'urtracker',
                                     target: '_blank',
-                                    style:'text-decoration:none',
-                                    'data-original-title': tooltipText});
+                                    style:'text-decoration:none'});
             $outputElemContainer.append($outputElem);
             $('#edit-buttons').children().first().append($outputElemContainer);
             $outputElem.tooltip({
@@ -52,4 +51,4 @@ function showmethemoney()
 }
 // [...]
 // then at the end of your script, call the bootstrap to get things started
-coolscript_bootstrap();
+URTracker_bootstrap();
