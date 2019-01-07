@@ -1,3 +1,4 @@
+//UR Tracker by pr0f (and kinda phuz)
 function URTracker_bootstrap()
 {
     var bGreasemonkeyServiceDefined     = false;
