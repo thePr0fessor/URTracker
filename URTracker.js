@@ -46,8 +46,6 @@
         var $section = $("<div>");
         $section.html([
             '<div id="URTracker">',
-            '<h4>UR Tracker Settings</h4>',
-            '<br>',
             '<label for="URTrackerAPIkey">API Key</label> <input type="textbox" id="URTrackerAPIkey" class="URTrackerSettingsCheckbox" size=30>',
             '<hr>',
             '<div class="rTable">',
@@ -64,9 +62,12 @@
             '<div class="rTableCell">3</div>',
             '</div>',
             '</div>',
-            '</div>',
             '<hr>',
-            '<input type="button" value="Scan my URs" id="URTrackerScanBtn" class="URTrackerButton">'
+            '<div><a href="https://www.waze.com/editor" target="_blank">My List of URs</a></div>',
+            '<hr>',
+            '<input type="button" value="Scan my URs" id="URTrackerScanBtn" class="URTrackerButton">',
+            '</div>'
+
         ].join(' '));
 
         new WazeWrap.Interface.Tab('UR Tracker', $section.html(), initializeSettings);
