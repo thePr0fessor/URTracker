@@ -29,19 +29,24 @@
 
     function init()
     {
-    var $section = $("<div>");
+        var $section = $("<div>");
         $section.html([
             '<div>',
             '<h4>UR Tracker Settings</h4>',
             '<br>',
             '<label for="URTrackerAPIkey">API Key</label> <input type="textbox" id="URTrackerAPIkey" class="URTrackerSettingsCheckbox" size=30>',
             '<hr>',
-            '<div align=right>',
-            'URs Open: <span id="urtrackerOpenURs"></span></br>',
-            'URs @ 4 days: <span id="urTrackerURs4"></span></br>',
-            'URs @ 8 days: <span id="urTrackerURs8"></span></br>',
+            '<div class="rTable">',
+            '<div class="rTableRow">',
+            '<div class="rTableCell">URs Open</div>',
+            '<div class="rTableCell">23</div>',
             '</div>',
-            '</div>'
+            '<div class="rTableRow">',
+            '<div class="rTableCell">URs @ 4 days</div>',
+            '<div class="rTableCell">7</div>',
+            '</div>',
+            '</div>',
+            '</div>',
         ].join(' '));
 
         new WazeWrap.Interface.Tab('UR Tracker', $section.html(), initializeSettings);
